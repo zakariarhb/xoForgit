@@ -15,5 +15,10 @@ namespace ApplicationXO
         {
             InitializeComponent();
         }
+
+        private void proposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Réaliser par monsieur Super Stilling in the back !!","XO Game");
+        }
     }
 }

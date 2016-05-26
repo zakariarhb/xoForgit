@@ -91,6 +91,7 @@
             this.proposToolStripMenuItem.Name = "proposToolStripMenuItem";
             this.proposToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.proposToolStripMenuItem.Text = "À propos";
+            this.proposToolStripMenuItem.Click += new System.EventHandler(this.proposToolStripMenuItem_Click);
             // 
             // A1
             // 
