@@ -37,6 +37,8 @@ namespace ApplicationXO
             else
                 b.Text = "O";
             tourner = !tourner;//au prochain clique sera inversé
+            //Resoudre le probleme de "On peut modifier le O avec Y dans la même Case(button)"
+            b.Enabled = false;
         }
     }
 }
