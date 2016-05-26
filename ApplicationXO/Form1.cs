@@ -69,12 +69,15 @@ namespace ApplicationXO
 
         private void desactiverBouton()
         {
-            foreach(Control c in Controls)
-            {
-                Button b = (Button)c;
+            try
+            { foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
 
-                b.Enabled = false;
-            }//end foreach
+                    b.Enabled = false;
+                }//end foreach
+            }//end try
+            catch { }        
         }
     }
 }
