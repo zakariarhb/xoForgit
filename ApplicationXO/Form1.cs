@@ -20,5 +20,10 @@ namespace ApplicationXO
         {
             MessageBox.Show("Réaliser par monsieur Super Stilling in the back !!","XO Game");
         }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
