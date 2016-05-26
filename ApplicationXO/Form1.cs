@@ -40,6 +40,8 @@ namespace ApplicationXO
             //Resoudre le probleme de "On peut modifier le O avec Y dans la même Case(button)"
             b.Enabled = false;
 
+            nombreDeTourni++;//on incremente le nombre de button touurni
+
             checkForWinner();
         }
 
@@ -63,7 +65,14 @@ namespace ApplicationXO
                     winner = "O";
                 else
                     winner = "X";
-                MessageBox.Show(winner + " a gagné !","OX Game");
+                MessageBox.Show(winner + " a gagné !", "OX Game");
+            }//end if
+            //si on ne trouve pas de gagnant
+
+            else
+            {
+                if (nombreDeTourni == 9)
+                    MessageBox.Show("Game Over !!", "XO Game");
             }
         }//end checkForWinner
 
