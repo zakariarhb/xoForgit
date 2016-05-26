@@ -11,6 +11,8 @@ namespace ApplicationXO
 {
     public partial class Form1 : Form
     {
+        bool tourner = true; // X=true , Y=false
+        int nombreDeTourni = 0;
         public Form1()
         {
             InitializeComponent();
