@@ -45,13 +45,24 @@ namespace ApplicationXO
 
         private void checkForWinner()
         {
-            bool winner = false;
+            //horizontal check
+            bool ici_winner = false;
             if ((A1.Text == A2.Text) && (A2.Text == A3.Text))
-                winner = true;
-            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
-                winner = true;
-            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
-                winner = true;
+                ici_winner = true;
+            else if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+               ici_winner = true;
+            else if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+               ici_winner = true;
+
+            if (ici_winner)
+            {
+                String winner = "";
+                if (tourner)
+                    winner = "O";
+                else
+                    winner = "X";
+                MessageBox.Show(winner + " a gagné !","OX Game");
+            }
         }//end checkForWinner
     }
 }
