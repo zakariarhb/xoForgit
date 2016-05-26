@@ -39,6 +39,19 @@ namespace ApplicationXO
             tourner = !tourner;//au prochain clique sera inversé
             //Resoudre le probleme de "On peut modifier le O avec Y dans la même Case(button)"
             b.Enabled = false;
+
+            checkForWinner();
         }
+
+        private void checkForWinner()
+        {
+            bool winner = false;
+            if ((A1.Text == A2.Text) && (A2.Text == A3.Text))
+                winner = true;
+            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+                winner = true;
+            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+                winner = true;
+        }//end checkForWinner
     }
 }
