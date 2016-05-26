@@ -194,6 +194,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XO Game";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
