@@ -27,5 +27,16 @@ namespace ApplicationXO
         {
             Application.Exit();
         }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            //le button cliqué est sender
+            Button b = (Button)sender;
+            if (tourner)
+                b.Text = "X";
+            else
+                b.Text = "O";
+            tourner = !tourner;//au prochain clique sera inversé
+        }
     }
 }
