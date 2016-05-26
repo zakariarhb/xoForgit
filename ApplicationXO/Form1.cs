@@ -55,6 +55,21 @@ namespace ApplicationXO
                ici_winner = true;
             else if ((B1.Text == B2.Text) && (B2.Text == B3.Text) && !(C1.Enabled))
                ici_winner = true;
+            
+            //vertical check
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && !(A1.Enabled))//il faut verifier que le button est desabled ok!
+                ici_winner = true;
+            else if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && !(A2.Enabled))
+                ici_winner = true;
+            else if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && !(A3.Enabled))
+                ici_winner = true;
+
+            //Diagonal check
+            if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && !(A1.Enabled))//il faut verifier que le button est desabled ok!
+                ici_winner = true;
+            else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && !(C1.Enabled))
+                ici_winner = true;
+            
 
             if (ici_winner)
             {
