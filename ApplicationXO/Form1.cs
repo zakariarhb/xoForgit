@@ -103,5 +103,22 @@ namespace ApplicationXO
             }//end try
             catch { }        
         }
+
+        private void nouvellePartieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //mise à zero tous les parametre de l'application
+            tourner = true;
+            nombreDeTourni = 0;
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
+                    b.Enabled =true;
+                    b.Text = "";
+                }//end foreach
+            }//end try
+            catch { }
+        }
     }
 }

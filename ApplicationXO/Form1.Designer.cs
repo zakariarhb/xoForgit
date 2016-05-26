@@ -79,6 +79,7 @@
             this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
             this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.nouvellePartieToolStripMenuItem.Text = "Nouvelle Partie";
+            this.nouvellePartieToolStripMenuItem.Click += new System.EventHandler(this.nouvellePartieToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
