@@ -56,6 +56,8 @@ namespace ApplicationXO
 
             if (ici_winner)
             {
+                //si on trouve un gagnant, on desactive les autres button qui sont actifs
+                desactiverBouton();
                 String winner = "";
                 if (tourner)
                     winner = "O";
@@ -64,5 +66,15 @@ namespace ApplicationXO
                 MessageBox.Show(winner + " a gagné !","OX Game");
             }
         }//end checkForWinner
+
+        private void desactiverBouton()
+        {
+            foreach(Control c in Controls)
+            {
+                Button b = (Button)c;
+
+                b.Enabled = false;
+            }//end foreach
+        }
     }
 }
