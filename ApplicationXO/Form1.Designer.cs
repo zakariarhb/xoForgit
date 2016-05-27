@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nouvellePartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.A1 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
@@ -66,14 +66,6 @@
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.proposToolStripMenuItem});
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.exitToolStripMenuItem.Text = "Aide";
-            // 
             // nouvellePartieToolStripMenuItem
             // 
             this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
@@ -88,10 +80,18 @@
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.proposToolStripMenuItem});
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.exitToolStripMenuItem.Text = "Aide";
+            // 
             // proposToolStripMenuItem
             // 
             this.proposToolStripMenuItem.Name = "proposToolStripMenuItem";
-            this.proposToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.proposToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.proposToolStripMenuItem.Text = "À propos";
             this.proposToolStripMenuItem.Click += new System.EventHandler(this.proposToolStripMenuItem_Click);
             // 
@@ -104,6 +104,7 @@
             this.A1.TabIndex = 1;
             this.A1.UseVisualStyleBackColor = true;
             this.A1.Click += new System.EventHandler(this.button_click);
+            this.A1.MouseEnter += new System.EventHandler(this.button_enter);
             // 
             // A2
             // 

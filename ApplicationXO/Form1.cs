@@ -120,5 +120,10 @@ namespace ApplicationXO
             }//end try
             catch { }
         }
+
+        private void button_enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
