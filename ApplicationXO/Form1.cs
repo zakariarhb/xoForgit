@@ -77,9 +77,14 @@ namespace ApplicationXO
                 desactiverBouton();
                 String winner = "";
                 if (tourner)
+                {
                     winner = "O";
-                else
+                   
+                }//end if
+                else {
+                    
                     winner = "X";
+                }
                 MessageBox.Show(winner + " a gagné !", "OX Game");
             }//end if
             //si on ne trouve pas de gagnant

@@ -46,9 +46,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.x_win_count = new System.Windows.Forms.Label();
-            this.game_over_count = new System.Windows.Forms.Label();
             this.o_win_count = new System.Windows.Forms.Label();
+            this.game_over_count = new System.Windows.Forms.Label();
+            this.x_win_count = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -277,9 +277,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(262, 322);
-            this.Controls.Add(this.o_win_count);
-            this.Controls.Add(this.game_over_count);
             this.Controls.Add(this.x_win_count);
+            this.Controls.Add(this.game_over_count);
+            this.Controls.Add(this.o_win_count);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
