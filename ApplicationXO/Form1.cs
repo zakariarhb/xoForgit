@@ -79,10 +79,10 @@ namespace ApplicationXO
                 if (tourner)
                 {
                     winner = "O";
-                    o_win_count.Text = o_win_count.Text + 1;
+                    o_win_count.Text = (Int32.Parse(o_win_count.Text) + 1).ToString();
                 }//end if
                 else {
-                    x_win_count.Text = (Int32.Parse(x_win_count.Text) + 1).ToString(); ;
+                    x_win_count.Text = (Int32.Parse(x_win_count.Text) + 1).ToString();
                     winner = "X";
                 }
                 MessageBox.Show(winner + " a gagné !", "OX Game");
@@ -101,15 +101,17 @@ namespace ApplicationXO
 
         private void desactiverBouton()
         {
-            try
-            { foreach (Control c in Controls)
+             foreach (Control c in Controls)
+             {
+                try
                 {
                     Button b = (Button)c;
 
                     b.Enabled = false;
-                }//end foreach
-            }//end try
-            catch { }        
+                }//end try
+                catch { }
+            }//end foreach
+                    
         }
 
         private void nouvellePartieToolStripMenuItem_Click(object sender, EventArgs e)
