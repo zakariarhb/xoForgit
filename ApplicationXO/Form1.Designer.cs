@@ -49,6 +49,7 @@
             this.o_win_count = new System.Windows.Forms.Label();
             this.game_over_count = new System.Windows.Forms.Label();
             this.x_win_count = new System.Windows.Forms.Label();
+            this.remettreÀZéroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nouvellePartieToolStripMenuItem,
+            this.remettreÀZéroToolStripMenuItem,
             this.quitterToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
@@ -75,14 +77,14 @@
             // nouvellePartieToolStripMenuItem
             // 
             this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
-            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.nouvellePartieToolStripMenuItem.Text = "Nouvelle Partie";
             this.nouvellePartieToolStripMenuItem.Click += new System.EventHandler(this.nouvellePartieToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -239,16 +241,16 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Victoire de O";
             // 
-            // x_win_count
+            // o_win_count
             // 
-            this.x_win_count.AutoSize = true;
-            this.x_win_count.Location = new System.Drawing.Point(31, 293);
-            this.x_win_count.Margin = new System.Windows.Forms.Padding(3);
-            this.x_win_count.Name = "x_win_count";
-            this.x_win_count.Padding = new System.Windows.Forms.Padding(5);
-            this.x_win_count.Size = new System.Drawing.Size(23, 23);
-            this.x_win_count.TabIndex = 13;
-            this.x_win_count.Text = "0";
+            this.o_win_count.AutoSize = true;
+            this.o_win_count.Location = new System.Drawing.Point(199, 293);
+            this.o_win_count.Margin = new System.Windows.Forms.Padding(3);
+            this.o_win_count.Name = "o_win_count";
+            this.o_win_count.Padding = new System.Windows.Forms.Padding(5);
+            this.o_win_count.Size = new System.Drawing.Size(23, 23);
+            this.o_win_count.TabIndex = 15;
+            this.o_win_count.Text = "0";
             // 
             // game_over_count
             // 
@@ -261,16 +263,23 @@
             this.game_over_count.TabIndex = 14;
             this.game_over_count.Text = "0";
             // 
-            // o_win_count
+            // x_win_count
             // 
-            this.o_win_count.AutoSize = true;
-            this.o_win_count.Location = new System.Drawing.Point(199, 293);
-            this.o_win_count.Margin = new System.Windows.Forms.Padding(3);
-            this.o_win_count.Name = "o_win_count";
-            this.o_win_count.Padding = new System.Windows.Forms.Padding(5);
-            this.o_win_count.Size = new System.Drawing.Size(23, 23);
-            this.o_win_count.TabIndex = 15;
-            this.o_win_count.Text = "0";
+            this.x_win_count.AutoSize = true;
+            this.x_win_count.Location = new System.Drawing.Point(31, 293);
+            this.x_win_count.Margin = new System.Windows.Forms.Padding(3);
+            this.x_win_count.Name = "x_win_count";
+            this.x_win_count.Padding = new System.Windows.Forms.Padding(5);
+            this.x_win_count.Size = new System.Drawing.Size(23, 23);
+            this.x_win_count.TabIndex = 13;
+            this.x_win_count.Text = "0";
+            // 
+            // remettreÀZéroToolStripMenuItem
+            // 
+            this.remettreÀZéroToolStripMenuItem.Name = "remettreÀZéroToolStripMenuItem";
+            this.remettreÀZéroToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.remettreÀZéroToolStripMenuItem.Text = "Remettre à zéro";
+            this.remettreÀZéroToolStripMenuItem.Click += new System.EventHandler(this.remettreÀZéroToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -329,6 +338,7 @@
         private System.Windows.Forms.Label x_win_count;
         private System.Windows.Forms.Label game_over_count;
         private System.Windows.Forms.Label o_win_count;
+        private System.Windows.Forms.ToolStripMenuItem remettreÀZéroToolStripMenuItem;
     }
 }
 

@@ -151,5 +151,12 @@ namespace ApplicationXO
             if (b.Enabled)
                 b.Text = "";
         }
+
+        private void remettreÀZéroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            o_win_count.Text = "0";
+            x_win_count.Text = "0";
+            game_over_count.Text = "0";
+        }
     }
 }
