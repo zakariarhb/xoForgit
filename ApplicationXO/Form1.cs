@@ -125,5 +125,10 @@ namespace ApplicationXO
         {
 
         }
+
+        private void button_leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }
