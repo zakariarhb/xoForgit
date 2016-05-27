@@ -117,16 +117,16 @@ namespace ApplicationXO
             //mise à zero tous les parametre de l'application
             tourner = true;
             nombreDeTourni = 0;
-            try
+            foreach (Control c in Controls)
             {
-                foreach (Control c in Controls)
+                try
                 {
                     Button b = (Button)c;
-                    b.Enabled =true;
+                    b.Enabled = true;
                     b.Text = "";
-                }//end foreach
-            }//end try
-            catch { }
+                }//end try
+                catch { }
+            }//end foreach 
         }
 
         private void button_enter(object sender, EventArgs e)
