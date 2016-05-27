@@ -69,7 +69,7 @@ namespace ApplicationXO
                 ici_winner = true;
             else if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && !(C1.Enabled))
                 ici_winner = true;
-            
+
 
             if (ici_winner)
             {
@@ -79,10 +79,10 @@ namespace ApplicationXO
                 if (tourner)
                 {
                     winner = "O";
-                   
+                    o_win_count.Text = o_win_count.Text + 1;
                 }//end if
                 else {
-                    
+                    x_win_count.Text = (Int32.Parse(x_win_count.Text) + 1).ToString(); ;
                     winner = "X";
                 }
                 MessageBox.Show(winner + " a gagné !", "OX Game");
@@ -92,7 +92,10 @@ namespace ApplicationXO
             else
             {
                 if (nombreDeTourni == 9)
+                {
+                    game_over_count.Text = (Int32.Parse(game_over_count.Text) + 1).ToString();
                     MessageBox.Show("Game Over !!", "XO Game");
+                }
             }
         }//end checkForWinner
 
