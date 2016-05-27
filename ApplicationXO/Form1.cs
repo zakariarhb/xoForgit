@@ -123,12 +123,23 @@ namespace ApplicationXO
 
         private void button_enter(object sender, EventArgs e)
         {
-
+            Button b = (Button)sender;
+            //Si le button est activé
+            if (b.Enabled)
+            {
+                if (tourner)
+                    b.Text = "X";
+                else
+                    b.Text = "O";
+            }//end if
         }
 
         private void button_leave(object sender, EventArgs e)
         {
-
+            //Pour eviter le probleme de tous selectionner
+            Button b = (Button)sender;
+            if (b.Enabled)
+                b.Text = "";
         }
     }
 }
